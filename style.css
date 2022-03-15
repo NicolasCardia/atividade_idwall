@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter' 12px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #8561ff;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #fff;
+    color: #50f;
+    transition: .7s;
+}
+
+.logo{
+    width: 200px;
+    height: 80px;
+}
