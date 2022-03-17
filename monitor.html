@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade FIAP</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <div class="app">
+        <div class="menu-toggle">
+            <div class="hamburger">
+                <span></span>
+            </div>
+        </div>
+        
+        <aside class="sidebar">
+            <div>
+                <img src="./img/idwall-logo.png" alt="logo" class="logo_idwall">
+            </div>
+            
+            
+
+            <nav class="menu">
+                <a href="#" class="menu-item">Protocolos</a>
+                <a href="#" class="menu-item">Documentos</a>
+                <a href="#" class="menu-item">Usuarios</a>
+                <a href="#" class="menu-item">Fontes</a>
+                <a href="#" class="menu-item">Matrizes</a>
+                <a href="#" class="menu-item">Regras</a>
+                <a href="#" class="menu-item">Atributos</a>
+                <a href="#" class="menu-item is-active">Monitor</a>
+                <a href="#" class="menu-item">Organizações</a>
+                <a href="#" class="menu-item">Sair</a>
+            </nav>
+
+        </aside>
+        <h1 class="monitor">Monitor</h1>
+        <main class="content" id="container">
+            <div class="col">
+                <h3>Status</h3>
+            </div>
+            <div class="col">
+                <h3>Protocolos</h3>
+            </div>
+            <div class="col">
+                <h3>Consultas em análise</h3>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const menu_toggle = document.querySelector('.menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        menu_toggle.addEventListener('click', () => {
+            menu_toggle.classList.toggle('is-active');
+            sidebar.classList.toggle('is-active');
+        });
+    </script>
+</body>
+
+</html>
