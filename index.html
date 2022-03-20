@@ -1,87 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./style.css">    
+    <link rel="stylesheet" href="./style.css" />
 
     <title>IdWall</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header></header>
+    <main></main>
+    <!-- Menu lateral -->
     <nav class="menu">
-        <img class="logo" src="./imagens/idwall-logo-360x115.png" alt="Logo IdWall">
-            <div id="list" class="list">
-                <ul class="menu">
-                    <li><a href="">Protocolos</a></li>
-                    <li><a href="">Documentos</a></li>
-                    <li><a href="">Usuários</a></li>
-                    <li><a href="">Fontes</a></li>
-                    <li><a href="">Matrizes</a></li>
-                    <li><a href="">Regras</a></li>
-                    <li><a href="">Atributos</a></li>
-                    <li><a href="">Monitor</a></li>
-                    <li><a href="">Organizações</a></li>
-                    <li><a href="">Sair</a></li>
-                </ul>
-            </div>
+      <img
+        class="logo"
+        src="./imagens/idwall-logo-360x115.png"
+        alt="Logo IdWall"
+      />
+      <div id="list" class="list">
+        <ul class="menu">
+          <li><a href="">Protocolos</a></li>
+          <li><a href="">Documentos</a></li>
+          <li><a href="">Usuários</a></li>
+          <li><a href="">Fontes</a></li>
+          <li><a href="">Matrizes</a></li>
+          <li><a href="">Regras</a></li>
+          <li><a href="">Atributos</a></li>
+          <li><a href="">Monitor</a></li>
+          <li><a href="">Organizações</a></li>
+          <li><a href="">Sair</a></li>
+        </ul>
+      </div>
     </nav>
-    <div class="box">
-        <form action="">
-            <legend><b>Novo Relatório</b></legend>
-            <fieldset>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome Completo</label>
-                </div>
-                <br>
-                <div class="inputBox">
-                    <input type="number" name="cpf" id="cpf" class="inputUser" required>
-                    <label for="cpf" class="labelInput">CPF</label>
-                </div>
-                <br>
-                <p>Relatório Padrão PF</p>
-                <input type="radio" id="situacao" name="genero" value="situacao" required>
-                <label for="situacao">Situação Cadastral Regular</label>
-                <br>
-                <input type="radio" id="antecedentes" name="genero" value="antecedentes" required>
-                <label for="antecedentes">Antecedentes Criminais</label>
-                <br>
-                <input type="radio" id="registro" name="genero" value="registro" required>
-                <label for="registro">Registro de Óbito na Receita Federal</label>
-                <br>
-                <input type="radio" id="protestos" name="genero" value="protestos" required>
-                <label for="protestos">Protestos</label>
-                <br>
-                <input type="radio" id="processos" name="genero" value="processos" required>
-                <label for="processos">Processos nos Tribunais de Justiça</label>
-                <br>
-                <input type="radio" id="receita" name="genero" value="receita" required>
-                <label for="receita">Nome na Receita Federal</label>
-                <br><br>
-                
-                <label for="data_nascimento"><b>Data de Nascimento</b></label>
-                <input type="date" name="data_nascimento" id="data_nascimento" required>
-                
-                <br><br>
-                <input type="submit" name="submit" id="submit">
-            </fieldset>
-        </form>
+    <!-- menu lateral/ -->
+    <!-- step bar -->
+    <div class="stepper-wrapper">
+      <div class="stepper-item completed">
+        <div class="step-counter">✔</div>
+        <div class="step-name">Configuração</div>
+      </div>
+      <div class="stepper-item active">
+        <div class="step-counter">2</div>
+        <div class="step-name">Dados</div>
+      </div>
+      <div class="stepper-item">
+        <div class="step-counter">3</div>
+        <div class="step-name">Relátorios</div>
+      </div>
     </div>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+    <!--  Step bar/ -->
+    <!-- formulário -->
+    <div class="box">
+      <form action="">
+        <legend><b>Novo Relatório</b></legend>
+        <fieldset>
+          <br />
+          <div class="inputBox">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputUser"
+              required
+            />
+            <label for="nome" class="labelInput">Nome Completo</label>
+          </div>
+          <br />
+          <div class="inputBox">
+            <input
+              type="number"
+              name="cpf"
+              id="cpf"
+              class="inputUser"
+              required
+            />
+            <label for="cpf" class="labelInput">CPF</label>
+          </div>
+          <br />
+          <p>Relatório Padrão PF</p>
+          <input
+            type="radio"
+            id="situacao"
+            name="genero"
+            value="situacao"
+            required
+          />
+          <label for="situacao">Situação Cadastral Regular</label>
+          <br />
+          <input
+            type="radio"
+            id="antecedentes"
+            name="genero"
+            value="antecedentes"
+            required
+          />
+          <label for="antecedentes">Antecedentes Criminais</label>
+          <br />
+          <input
+            type="radio"
+            id="registro"
+            name="genero"
+            value="registro"
+            required
+          />
+          <label for="registro">Registro de Óbito na Receita Federal</label>
+          <br />
+          <input
+            type="radio"
+            id="protestos"
+            name="genero"
+            value="protestos"
+            required
+          />
+          <label for="protestos">Protestos</label>
+          <br />
+          <input
+            type="radio"
+            id="processos"
+            name="genero"
+            value="processos"
+            required
+          />
+          <label for="processos">Processos nos Tribunais de Justiça</label>
+          <br />
+          <input
+            type="radio"
+            id="receita"
+            name="genero"
+            value="receita"
+            required
+          />
+          <label for="receita">Nome na Receita Federal</label>
+          <br /><br />
 
-  
-</body>
+          <label for="data_nascimento"><b>Data de Nascimento</b></label>
+          <input
+            type="date"
+            name="data_nascimento"
+            id="data_nascimento"
+            required
+          />
 
+          <br /><br />
+
+          <input type="submit" name="submit" id="submit" />
+        </fieldset>
+      </form>
+    </div>
+    <!-- formulário/ -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
