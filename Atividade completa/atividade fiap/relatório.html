@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Novo Relatório</title>
+    <!DOCTYPE html>
+    <html lang="pt">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>IdWall</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Boxiocns CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="sidebar close">
+            <div class="logo-details">
+                <i class="uil uil-user-square"></i>
+                <span class="logo_name">IDWall</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-grid-alt'></i>
+                        <span class="link_name">Protocolos</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Protocolos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-collection'></i>
+                            <span class="link_name">Documentos</span>
+                        </a>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Documentos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class="uil uil-user"></i>
+                            <span class="link_name">Usuários</span>
+                        </a>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Usuários</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-pie-chart-alt-2'></i>
+                        <span class="link_name">Fontes</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Fontes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="uil uil-columns"></i>
+                        <span class="link_name">Matrizes</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Matrizes</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="uil uil-balance-scale"></i>
+                        <span class="link_name">Regras</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Regras</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="uil uil-meeting-board"></i>
+                        <span class="link_name">Atributos</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Atributos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="iocn-link">
+                        <a href="#">
+                            <i class='bx bx-line-chart'></i>
+                            <span class="link_name">Monitor</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </div>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#">Monitor</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="./protocol.html">Protocolos</a></li>
+                        <li><a href="./analisys.html">Consultas em análise</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-compass'></i>
+                        <span class="link_name">Organizações</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Organizações</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-compass'></i>
+                        <span class="link_name">Relatórios</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Relatórios</a></li>
+                        <li><a href="#">Selecione uma Configuração</a></li>
+                        <li><a href="./relatório.html">Novo Relatório</a></li>
+                        <li><a href="#">Acompanhe relatórios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-log-out'></i>
+                        <span class="link_name">Sair</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="#">Sair</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="./image/idwall-logo.png" alt="profileImg">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        </section>
+        <header>
+            <h2 class="textAlign">Novo Relatório</h1>
+            <nav class="nav_tabs">
+                <ul>
+                    <div class="box">
+                        <form action="">
+                            <legend><b>Novo Relatório</b></legend>
+                            <fieldset>
+                                <br>
+                                <div class="inputBox">
+                                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                                    <label for="nome" class="labelInput">Nome Completo</label>
+                                </div>
+                                <br>
+                                <div class="inputBox">
+                                    <input type="number" name="cpf" id="cpf" class="inputUser" required>
+                                    <label for="cpf" class="labelInput">CPF</label>
+                                </div>
+                                <br>
+                                <p>Relatório Padrão PF</p>
+                                <input type="radio" id="situacao" name="genero" value="situacao" required>
+                                <label for="situacao">Situação Cadastral Regular</label>
+                                <br>
+                                <input type="radio" id="antecedentes" name="genero" value="antecedentes" required>
+                                <label for="antecedentes">Antecedentes Criminais</label>
+                                <br>
+                                <input type="radio" id="registro" name="genero" value="registro" required>
+                                <label for="registro">Registro de Óbito na Receita Federal</label>
+                                <br>
+                                <input type="radio" id="protestos" name="genero" value="protestos" required>
+                                <label for="protestos">Protestos</label>
+                                <br>
+                                <input type="radio" id="processos" name="genero" value="processos" required>
+                                <label for="processos">Processos nos Tribunais de Justiça</label>
+                                <br>
+                                <input type="radio" id="receita" name="genero" value="receita" required>
+                                <label for="receita">Nome na Receita Federal</label>
+                                <br><br>
+        
+                                <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                                <input type="date" name="data_nascimento" id="data_nascimento" required>
+        
+                                <br><br>
+                                <input type="submit" name="submit" id="submit">
+                            </fieldset>
+                        </form>
+                    </div>
+                    
+                </ul>
+            </nav>
+    
+        <script src="script.js"></script>
+    
+    </body>
+    
+    </html>
+
+</head>
+<body>
+    
+</body>
+</html>
