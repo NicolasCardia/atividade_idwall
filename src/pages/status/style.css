@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -104,7 +105,9 @@
   pointer-events: none;
 }
 .sidebar .nav-links li .sub-menu {
-  padding: 6px 6px 14px 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25px;
   margin-top: -10px;
   background: #130040;
   display: none;
@@ -167,7 +170,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1d1b31;
+  background: #efe4f7;
   padding: 12px 0;
   transition: all 0.5s ease;
 }
@@ -186,7 +189,6 @@
   width: 100px;
   object-fit: cover;
   margin: 0 14px 0 12px;
-  background: #1d1b31;
   transition: all 0.5s ease;
 }
 .sidebar.close .profile-details img {
