@@ -12,8 +12,8 @@ body {
 }
 
 .stepper-wrapper {
-  margin-top: 125px;
-  margin-left: 190px;
+  margin-top: 15px;
+  margin-left: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -128,13 +128,13 @@ body {
 .box {
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 48%;
   transform: translate(-20%, -50%);
   background-image: linear-gradient(to right, #6b31ff, #30009f);
   color: white;
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px;
-  width: 25%;
+  width: 30%;
 }
 
 legend {
